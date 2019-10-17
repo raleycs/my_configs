@@ -8,7 +8,7 @@ set smarttab
 set expandtab
 set laststatus=2
 syntax on
-filetype off
+filetype plugin indent on
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -32,14 +32,17 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'bling/vim-bufferline'
+Plugin 'vimwiki/vimwiki'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline#extensions#tabline#formatter = 'default'
-let g:airline_theme='luna'
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlPMixed'
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+let g:airline_theme='deus'
+let g:vimwiki_global_ext = 0
+let g:vimwiki_list = [{'path': '~', 'syntax': 'markdown', 'ext': '.txt'}]
 call vundle#end()
-filetype plugin indent on
 
 set backspace=indent,eol,start
+autocmd FileType vimwiki set ft=markdown
+map <Tab> :bn<cr>

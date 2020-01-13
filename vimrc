@@ -1,7 +1,8 @@
 set nocompatible
 set autoindent
 set nowrap
-set number
+set number relativenumber
+set nu rnu
 set tabstop=4
 set shiftwidth=4
 set smarttab

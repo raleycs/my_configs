@@ -34,7 +34,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
-let g:airline_theme='fruit_punch'
+let g:airline_theme='alduin'
 call vundle#end()
 
 set backspace=indent,eol,start

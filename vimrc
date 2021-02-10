@@ -8,6 +8,7 @@ set shiftwidth=4
 set smarttab
 set expandtab
 set laststatus=2
+set visualbell
 syntax on
 filetype plugin indent on
 

@@ -12,6 +12,8 @@ set visualbell
 syntax on
 filetype plugin indent on
 
+" VUNDLE SETUP
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -40,4 +42,6 @@ let g:airline_theme='alduin'
 call vundle#end()
 
 set backspace=indent,eol,start
+
+" Tab to switch between open buffers
 map <Tab> :bn<cr>

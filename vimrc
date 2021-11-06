@@ -45,3 +45,4 @@ set backspace=indent,eol,start
 
 " Tab to switch between open buffers
 map <Tab> :bn<cr>
+map <S-Tab> :bp<cr>

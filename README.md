@@ -7,4 +7,5 @@ Note that [Vundle](https://github.com/VundleVim/Vundle.vim) needs to be installe
 
 ## .zshrc
 `cp .zshrc ~/.zshrc`
+`cp .highlighters ~/.highlighters`
 Credit to [zsh-users](https://github.com/zsh-users/zsh-syntax-highlighting) for the syntax highlights

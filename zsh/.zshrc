@@ -11,7 +11,7 @@ zstyle ':vcs_info:*' enable git
 
 # Set up the prompt (with git branch name)
 setopt PROMPT_SUBST
-PROMPT='%1d${vcs_info_msg_0_} ↪ '
+PROMPT='%~${vcs_info_msg_0_} ↪ '
 
 # Enable colors
 autoload -U colors && colors

@@ -23,22 +23,19 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" Generic Programming Support 
-Plugin 'honza/vim-snippets'
-Plugin 'jiangmiao/auto-pairs'
 Plugin 'tomtom/tcomment_vim'
-Plugin 'maksimr/vim-jsbeautify'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'leafgarland/typescript-vim'
 Plugin 'bling/vim-bufferline'
-Plugin 'tpope/vim-fugitive'
+Plugin 'valloric/youcompleteme'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline_theme='base16'
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
 call vundle#end()
 
 set backspace=indent,eol,start
@@ -46,3 +43,12 @@ set backspace=indent,eol,start
 " Tab to switch between open buffers
 map <Tab> :bn<cr>
 map <S-Tab> :bp<cr>
+
+nmap <S-t> :term<CR>
+
+inoremap (; (<CR>);<C-c>O
+inoremap (, (<CR>),<C-c>O
+inoremap {; {<CR>};<C-c>O
+inoremap {, {<CR>},<C-c>O
+inoremap [; [<CR>];<C-c>O
+inoremap [, [<CR>],<C-c>O

@@ -44,11 +44,5 @@ set backspace=indent,eol,start
 map <Tab> :bn<cr>
 map <S-Tab> :bp<cr>
 
-nmap <S-t> :term<CR>
-
-inoremap (; (<CR>);<C-c>O
-inoremap (, (<CR>),<C-c>O
-inoremap {; {<CR>};<C-c>O
-inoremap {, {<CR>},<C-c>O
-inoremap [; [<CR>];<C-c>O
-inoremap [, [<CR>],<C-c>O
+" Shift + t for terminal
+nmap <S-t> :vert term<CR>
